@@ -17,6 +17,8 @@ public class Test_GetMethod {
 		System.out.println("Response Time : " + response.getTime());
 		System.out.println("Response Header : " + response.getHeader("Content-Type"));
 		
+		// testing 
+		
 		//Validate Status code
 		//expected status code = 200
 		
