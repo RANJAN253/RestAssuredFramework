@@ -24,23 +24,21 @@ public class Test_GetMethod {
         int Actualtatuscode = response.getStatusCode();
 
         Assert.assertEquals(expectstatuscode,Actualtatuscode);
-
     }
 
     @Test
     public void test02()
     {
         // given, When , then
-       // RestAssured - Class
+        // RestAssured - Class
         //baseURI - Method
-
         // import static io.restassured.RestAssured.* ;   - for remove class name of RestAssured.
 
         //RestAssured.baseURI = "https://reqres.in/api/users";
         //RestAssured.given()
 
         baseURI = "https://reqres.in/api/users";
-        given()
+                 given()
                 .queryParam("page", "2")
                 .when().get()
                 .then().statusCode(200);

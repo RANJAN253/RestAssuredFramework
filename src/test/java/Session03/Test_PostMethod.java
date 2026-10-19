@@ -1,6 +1,5 @@
 package Session03;
 import org.json.simple.JSONObject;
-
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
@@ -9,6 +8,7 @@ public class Test_PostMethod {
 
     @Test
     public void test03() {
+
         JSONObject jsonData = new JSONObject();
         jsonData.put("Name", "Ranjan");
         jsonData.put("Job", "Testing");
@@ -18,6 +18,6 @@ public class Test_PostMethod {
                 contentType(ContentType.JSON).
                 body(jsonData.toJSONString()).
                 when().post().
-                then().statusCode(200);
+                then().statusCode(201).log().all();
     }
 }
