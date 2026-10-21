@@ -18,8 +18,8 @@ public class Test_PatchMethod {
                 contentType(ContentType.JSON).
                 body(jsonData.toJSONString()).
                 when().
-                patch().
+                     patch().
                 then().
-                statusCode(200).log().all();
+                     statusCode(200).log().all();
     }
 }

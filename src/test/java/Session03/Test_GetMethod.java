@@ -43,6 +43,7 @@ public class Test_GetMethod {
                 .when().get()
                 .then().statusCode(200);
     }
+
 }
 
 
