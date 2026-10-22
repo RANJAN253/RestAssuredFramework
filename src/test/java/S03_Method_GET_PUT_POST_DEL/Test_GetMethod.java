@@ -1,7 +1,5 @@
-package Session03;
-
+package S03_Method_GET_PUT_POST_DEL;
 import static io.restassured.RestAssured.*;
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;

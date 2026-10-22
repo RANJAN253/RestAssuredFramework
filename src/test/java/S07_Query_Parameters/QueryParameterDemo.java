@@ -1,4 +1,4 @@
-package Session07_Query_Parameters;
+package S07_Query_Parameters;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;

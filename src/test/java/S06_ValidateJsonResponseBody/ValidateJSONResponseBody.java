@@ -1,6 +1,5 @@
-package Session06;
+package S06_ValidateJsonResponseBody;
 
-import groovy.json.JsonParserType;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;

@@ -1,7 +1,6 @@
-package Session03;
+package S03_Method_GET_PUT_POST_DEL;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 

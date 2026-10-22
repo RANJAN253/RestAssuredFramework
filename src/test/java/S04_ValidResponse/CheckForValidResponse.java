@@ -1,4 +1,4 @@
-package Session04;
+package S04_ValidResponse;
 
 import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;

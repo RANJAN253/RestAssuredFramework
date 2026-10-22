@@ -1,4 +1,4 @@
-package Session05;
+package S05_ValidateResponseHeader;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
