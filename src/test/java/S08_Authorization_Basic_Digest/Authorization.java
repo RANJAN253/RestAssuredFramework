@@ -20,7 +20,6 @@ public class Authorization {
        //Response response = requestSpec.auth().basic("postman","password").get();
         Response response = requestSpec.auth().preemptive().basic("postman","password").get();
 
-
         System.out.println("Response Status :" + response.statusLine());
         System.out.println("Response Body : "+ response.body().asString());
     }
@@ -33,7 +32,6 @@ public class Authorization {
         requestSpec.baseUri("http://httpbin.org");
         requestSpec.basePath("/digest-auth/undefined/ranjan/ranjan");
 
-       // Response response = requestSpec.get();
         //Response response = requestSpec.auth().basic("postman","password").get();
         Response response = requestSpec.auth().digest("ranjan","ranjan").get();
 

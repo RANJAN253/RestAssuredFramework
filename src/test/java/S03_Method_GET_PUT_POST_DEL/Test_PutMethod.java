@@ -11,7 +11,7 @@ public class Test_PutMethod {
     public void Test04() {
         JSONObject jsonData = new JSONObject();
         jsonData.put("Name", "Sandeep");
-        jsonData.put("Job", "HR");
+       // jsonData.put("Job", "HR");
 
         RestAssured.baseURI = "https://reqres.in/api/users/637";
         RestAssured.given().header("Content-Type", "application/json").

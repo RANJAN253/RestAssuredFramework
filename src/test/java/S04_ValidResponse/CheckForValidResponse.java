@@ -24,7 +24,7 @@ public class CheckForValidResponse {
         int statusCode = response.getStatusCode();
 
         // validate actualStatuscode with expected
-        Assert.assertEquals(statusCode/*actual stattus code*/, 200/*expected status code*/, "correct status code received");
+        Assert.assertEquals(statusCode/*actual status code*/, 200/*expected status code*/, "correct status code received");
 
         String statusLine = response.getStatusLine();
         Assert.assertEquals(statusLine, "HTTP/1.1 200 OK", "Incorrect status line returned");
@@ -53,9 +53,9 @@ public class CheckForValidResponse {
     public void getSingleUser_BDDSttyle() {
         given()
 
-                .when()
-                .get("https://reqres.in/api/users/2")
-
-                .then().statusCode(200).statusLine("HTTP/1.1 200 OK");
+                .when().
+                    get("https://reqres.in/api/users/2")
+                .then().
+                    statusCode(200).statusLine("HTTP/1.1 200 OK");
     }
 }

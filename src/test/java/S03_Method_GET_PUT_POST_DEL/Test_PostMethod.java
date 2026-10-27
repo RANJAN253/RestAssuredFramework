@@ -14,10 +14,13 @@ public class Test_PostMethod {
         jsonData.put("Job", "Testing");
 
         RestAssured.baseURI = "https://reqres.in/api/users";
-        RestAssured.given().header("Content-Type", "application/json").
-                contentType(ContentType.JSON).
-                body(jsonData.toJSONString()).
-                when().post().
-                then().statusCode(201).log().all();
+        RestAssured.given().
+                        header("Content-Type", "application/json").
+                        contentType(ContentType.JSON).
+                        body(jsonData.toJSONString()).
+                    when().
+                        post().
+                    then().
+                        statusCode(201).log().all();
     }
 }

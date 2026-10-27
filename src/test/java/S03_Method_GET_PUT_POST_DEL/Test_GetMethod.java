@@ -24,7 +24,7 @@ public class Test_GetMethod {
         Assert.assertEquals(expectstatuscode,Actualtatuscode);
     }
 
-    @Test
+    @Test()
     public void test02()
     {
         // given, When , then
@@ -36,10 +36,12 @@ public class Test_GetMethod {
         //RestAssured.given()
 
         baseURI = "https://reqres.in/api/users";
-                 given()
-                .queryParam("page", "2")
-                .when().get()
-                .then().statusCode(200);
+                 given().
+                         queryParam("page", "2").
+                 when().
+                         get().
+                 then().
+                         statusCode(200);
     }
 
 }
