@@ -7,7 +7,7 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class QueryParameterDemo {
+public class QueryParameterDemoTest {
 
     @Test
     public void filterData() {

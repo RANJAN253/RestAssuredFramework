@@ -2,14 +2,13 @@ package S09_Authoriazation_Bearer_Token;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.internal.path.json.mapping.JsonObjectDeserializer;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AuthorizationDemo {
+public class AuthorizationDemoTest {
 
     @Test
     public void BearerToken() {

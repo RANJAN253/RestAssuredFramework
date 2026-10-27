@@ -7,9 +7,9 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckForValidResponse {
+public class CheckForValidResponseTtest {
 
-    @Test(enabled = false)
+    @Test
     public void getSingleUser() {
         //specify  base URL
         baseURI = "https://reqres.in/api/users/2";
