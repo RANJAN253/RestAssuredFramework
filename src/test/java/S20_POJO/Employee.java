@@ -1,12 +1,7 @@
 package S20_POJO;
 
 public class Employee {
-    /* firstName - String
-    lastName - String
-    age - int
-    gender - String
-    salary  - double
-     */
+
     private String firstname;
     private String lastname;
     private String gender;
